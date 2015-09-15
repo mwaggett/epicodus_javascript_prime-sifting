@@ -51,3 +51,27 @@ var primesRecursive = function(number) {
     return primeSift(number-1);
   }
 }
+
+$(document).ready(function() {
+  $("form.input").submit(function(evennt) {
+    var number = parseInt($("input#number").val());
+
+    var seiveStart = new Date().getTime();
+    var seivePrimes = primeSift(number);
+    var seiveEnd = new Date().getTime();
+    var seiveTime = seiveEnd - seiveStart;
+    $(".seivePrimes").text(seivePrimes);
+    $(".seiveTime").text(seiveTime);
+
+    var recStart = new Date().getTime();
+    var recPrimes = primesRecursive(number);
+    var recEnd = new Date().getTime();
+    var recTime = recEnd - recStart;
+    $(".recPrimes").text(recPrimes);
+    $(".recTime").text(recTime);
+
+    $(".result").show();
+    $(".input").hide();
+    event.preventDefault();
+  });
+});

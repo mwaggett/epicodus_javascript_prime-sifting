@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Prime Sifting</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>Primes</h1>
+
+      <form class="input">
+        <div class="form-group">
+          <label for="number">Enter a number to get the primes up to that number:</label>
+          <input id="number" type="text">
+        </div>
+        <button type="submit" class="btn">Find out!</button>
+      </form>
+
+      <div class="result">
+        <p>Primes using the Sieve of Eratosthenes: <span class="seivePrimes"></span></p>
+        <p>Runtime: <span class="seiveTime"></span>ms</p>
+      </div>
+
+      <div class="result">
+        <p>Primes using recursion: <span class="recPrimes"></span></p>
+        <p>Runtime: <span class="recTime"></span>ms</p>
+      </div>
+
+    </div>
+  </body>
+</html>
