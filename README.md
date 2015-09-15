@@ -6,21 +6,18 @@
 
 ## Description
 
-Functions to return a list of primes up to an input number. One function uses
-the Sieve of Eratosthenes and one function uses recursion.
-_**No web interface yet.**_
+This page compares the runtime of two different functions for returning a list of primes up to an input number. One function uses the Sieve of Eratosthenes and one function uses recursion.
 
 ## Setup
 
 * Clone this repository.
-* To run tests, open the spec-runner.html file in your browser.
-<!-- * Open the index.html file in your browser. -->
-<!-- * Go! -->
+* Open the index.html file in your browser.
+* Go!
 
 ## Technologies Used
 
 * JavaScript
-<!-- * jQuery -->
+* jQuery
 * Mocha
 * Chai
 
