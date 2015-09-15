@@ -1,27 +1,32 @@
-# Application Name
+# Prime Sifting
 
-##### _{Brief description of application}, {Date of current version}_
+##### _JavaScript BDD practice for Epicodus, 15 September 2015_
 
-#### By **Molly Waggett**
+#### By **Andrea Padgett & Molly Waggett**
 
 ## Description
 
-{This is a detailed description of your application. Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. Do you want other developers to use this code in their apps? Talk about things like that here in simple terms.}
+Functions to return a list of primes up to an input number. One function uses
+the Sieve of Eratosthenes and one function uses recursion.
+_**No web interface yet.**_
 
 ## Setup
 
 * Clone this repository.
+* To run tests, open the spec-runner.html file in your browser.
+<!-- * Open the index.html file in your browser. -->
+<!-- * Go! -->
 
 ## Technologies Used
 
 * JavaScript
-* jQuery
+<!-- * jQuery -->
 * Mocha
 * Chai
 
 ### Legal
 
-Copyright (c) 2015 **Molly Waggett**
+Copyright (c) 2015 **Andrea Padgett & Molly Waggett**
 
 This software is licensed under the MIT license.
 
