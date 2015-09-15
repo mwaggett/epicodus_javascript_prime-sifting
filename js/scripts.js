@@ -10,7 +10,7 @@ var primeSift = function(number) {
     }
     return myArray;
   } else {
-    return "No prime numbers."
+    return [];
   }
 }
 
@@ -22,10 +22,32 @@ var arrayUpToNumber = function(number) {
   return myArray;
 };
 
+
+
 var isMultiple = function(numberA, numberB){
   return numberB % numberA === 0;
 }
 
-// $(document).ready(function() {
-//
-// });
+
+var isPrime = function(number) {
+  if (number < 2) {
+    return false;
+  } else {
+    for (var i = 2; i <= number/2; i++) {
+      if (isMultiple(i,number)) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
+var primesRecursive = function(number) {
+  if (number < 2) {
+    return [];
+  } else if (isPrime(number)) {
+    return primeSift(number-1).concat([number]);
+  } else {
+    return primeSift(number-1);
+  }
+}
